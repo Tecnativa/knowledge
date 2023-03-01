@@ -1,35 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- Copyright 2018 Tecnativa - Ernesto Tejeda
-     Copyright 2021 Tecnativa - Víctor Martínez
+     Copyright 2021-2023 Tecnativa - Víctor Martínez
      License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
 <templates>
     <t t-inherit="mail.AttachmentBox" t-inherit-mode="extension" owl="1">
-        <xpath
-            expr="//button[hasclass('o_AttachmentBox_buttonAdd')]"
-            position="replace"
-        >
-            <div align="center">
-                <button
-                    class="o_AttachmentBox_buttonAdd btn btn-link"
-                    type="button"
-                    t-on-click="_onClickAdd"
-                >
-                    <i class="fa fa-plus-square" />
-                    Add attachments
-                </button>
-                <button
-                    type="button"
-                    class="o_add_url_button btn btn-link"
-                    t-on-click="_onAddUrl"
-                >
-                    <i class="fa fa-plus-square" />
-                    Add URL
-                </button>
-            </div>
+        <xpath expr="//div[hasclass('o_AttachmentBox_content')]" position="attributes">
+            <attribute name="class" add="d-block text-center" separator=" " />
+        </xpath>
+        <xpath expr="//button[hasclass('o_AttachmentBox_buttonAdd')]" position="after">
+            <button
+                class="o_add_url_button btn btn-link"
+                type="button"
+                t-on-click.stop.prevent="_onAddUrl"
+            >
+                <i class="fa fa-plus-square" />
+                Add URL
+            </button>
         </xpath>
     </t>
 
-    <t t-inherit="mail.AttachmentCard" t-inherit-mode="extension" owl="1">
+    <!-- <t t-inherit="mail.AttachmentCard" t-inherit-mode="extension" owl="1">
         <xpath
             expr="//div[hasclass('o_AttachmentCard_details')]/t/div"
             position="replace"
@@ -66,5 +56,5 @@
                 <i class="fa fa-link fa-2x" />
             </a>
         </xpath>
-    </t>
+    </t> -->
 </templates>

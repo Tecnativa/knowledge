@@ -5,31 +5,22 @@ import {AttachmentCard} from "@mail/components/attachment_card/attachment_card";
 import {patch} from "web.utils";
 
 patch(AttachmentBox.prototype, "document_url/static/src/js/url.js", {
-    _onAddUrl(event) {
-        event.preventDefault();
-        event.stopPropagation();
-        this.env.bus.trigger("do-action", {
-            action: "document_url.action_ir_attachment_add_url",
-            options: {
-                additional_context: {
-                    active_id: this.messaging.models["mail.chatter"].get(
-                        this.props.chatterLocalId
-                    ).threadId,
-                    active_ids: [
-                        this.messaging.models["mail.chatter"].get(
-                            this.props.chatterLocalId
-                        ).threadId,
-                    ],
-                    active_model: this.messaging.models["mail.chatter"].get(
-                        this.props.chatterLocalId
-                    ).threadModel,
-                },
-                on_close: this._onAddedUrl.bind(this),
-            },
-        });
+    _onAddUrl() {
+        const action = {
+            type: "ir.actions.act_window",
+            name: "action_ir_attachment_add_url",
+            views: [[false, "form"]],
+            res_model: "ir.attachment.add_url",
+            view_mode: "form",
+            target: "new",
+        };
+        const options = {
+            onClose: this._onAddedUrl.bind(this),
+        };
+        this.env.services.action.doAction(action, options);
     },
     _onAddedUrl() {
-        this.trigger("reload");
+        this._reload();
     },
 });
 
