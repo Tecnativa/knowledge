@@ -7,9 +7,10 @@
     "website": "https://github.com/OCA/knowledge",
     "author": "Tecnativa, Odoo Community Association (OCA)",
     "license": "AGPL-3",
-    "depends": ["base"],
+    "depends": ["base", "product"],
     "data": [
         "views/ir_attachment_view.xml",
+        "views/product_template_views.xml",
     ],
     "installable": True,
 }
