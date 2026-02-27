@@ -13,7 +13,6 @@ class TestMixin(SavepointCase, TestAttachmentZippedDownloadBase):
     def setUpClass(cls):
         super(TestMixin, cls).setUpClass()
         cls.loader = FakeModelLoader(cls.env, cls.__module__)
-        cls.addClassCleanup(cls.loader.restore_registry)
         cls.loader.backup_registry()
 
         # Imported Test model must be done after the backup_registry
