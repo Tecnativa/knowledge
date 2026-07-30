@@ -34,4 +34,5 @@
             "document_page/static/src/scss/document_page.scss",
         ],
     },
+    "post_init_hook": "post_init_hook",
 }
