@@ -4,7 +4,7 @@
 {
     "name": "Document Page Access Group",
     "summary": "Choose groups to access document pages",
-    "version": "19.0.1.0.1",
+    "version": "20.0.1.0.0",
     "category": "document_knowledge",
     "website": "https://github.com/OCA/knowledge",
     "author": "Sygel, Creu Blanca, Odoo Community Association (OCA)",
@@ -15,5 +15,8 @@
         "document_page",
         "document_knowledge",
     ],
-    "data": ["views/document_page.xml", "security/security.xml"],
+    "data": [
+        "views/document_page.xml",
+        "security/ir.access.csv",
+    ],
 }

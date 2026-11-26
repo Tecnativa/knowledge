@@ -21,13 +21,13 @@ Document Page Access Group
     :target: http://www.gnu.org/licenses/agpl-3.0-standalone.html
     :alt: License: AGPL-3
 .. |badge3| image:: https://img.shields.io/badge/github-OCA%2Fknowledge-lightgray.png?logo=github
-    :target: https://github.com/OCA/knowledge/tree/19.0/document_page_access_group
+    :target: https://github.com/OCA/knowledge/tree/20.0/document_page_access_group
     :alt: OCA/knowledge
 .. |badge4| image:: https://img.shields.io/badge/weblate-Translate%20me-F47D42.png
-    :target: https://translation.odoo-community.org/projects/knowledge-19-0/knowledge-19-0-document_page_access_group
+    :target: https://translation.odoo-community.org/projects/knowledge-20-0/knowledge-20-0-document_page_access_group
     :alt: Translate me on Weblate
 .. |badge5| image:: https://img.shields.io/badge/runboat-Try%20me-875A7B.png
-    :target: https://runboat.odoo-community.org/builds?repo=OCA/knowledge&target_branch=19.0
+    :target: https://runboat.odoo-community.org/builds?repo=OCA/knowledge&target_branch=20.0
     :alt: Try me on Runboat
 
 |badge1| |badge2| |badge3| |badge4| |badge5|
@@ -46,10 +46,11 @@ Usage
 To select the users that have access to a given document page you need
 to open a document, go to the 'Security' tab and you have 3 options:
 
-- Select a group: Only users with those groups will be able to see the
-  page.
-- Select any user: Only the selected users will be able to see the page.
-- Do not select group or user: All users will be able to see the page.
+-  Select a group: Only users with those groups will be able to see the
+   page.
+-  Select any user: Only the selected users will be able to see the
+   page.
+-  Do not select group or user: All users will be able to see the page.
 
 Bug Tracker
 ===========
@@ -57,7 +58,7 @@ Bug Tracker
 Bugs are tracked on `GitHub Issues <https://github.com/OCA/knowledge/issues>`_.
 In case of trouble, please check there if your issue has already been reported.
 If you spotted it first, help us to smash it by providing a detailed and welcomed
-`feedback <https://github.com/OCA/knowledge/issues/new?body=module:%20document_page_access_group%0Aversion:%2019.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
+`feedback <https://github.com/OCA/knowledge/issues/new?body=module:%20document_page_access_group%0Aversion:%2020.0%0A%0A**Steps%20to%20reproduce**%0A-%20...%0A%0A**Current%20behavior**%0A%0A**Expected%20behavior**>`_.
 
 Do not contact contributors directly about support or help with technical issues.
 
@@ -73,19 +74,19 @@ Authors
 Contributors
 ------------
 
-- Manuel Regidor <manuel.regidor@sygel.es>
-- Alberto Martínez <alberto.martinez@sygel.es>
-- `Tecnativa <https://www.tecnativa.com>`__:
+-  Manuel Regidor <manuel.regidor@sygel.es>
+-  Alberto Martínez <alberto.martinez@sygel.es>
+-  `Tecnativa <https://www.tecnativa.com>`__:
 
-  - Víctor Martínez
+   -  Víctor Martínez
 
-- `Heliconia Solutions Pvt. Ltd. <https://www.heliconia.io>`__
+-  `Heliconia Solutions Pvt. Ltd. <https://www.heliconia.io>`__
 
-  - Bhavesh Heliconia
+   -  Bhavesh Heliconia
 
-- `Dixmit <https://www.dixmit.com>`__:
+-  `Dixmit <https://www.dixmit.com>`__:
 
-  - Enric Tobella
+   -  Enric Tobella
 
 Maintainers
 -----------
@@ -100,6 +101,6 @@ OCA, or the Odoo Community Association, is a nonprofit organization whose
 mission is to support the collaborative development of Odoo features and
 promote its widespread use.
 
-This module is part of the `OCA/knowledge <https://github.com/OCA/knowledge/tree/19.0/document_page_access_group>`_ project on GitHub.
+This module is part of the `OCA/knowledge <https://github.com/OCA/knowledge/tree/20.0/document_page_access_group>`_ project on GitHub.
 
 You are welcome to contribute. To learn how please visit https://odoo-community.org/page/Contribute.

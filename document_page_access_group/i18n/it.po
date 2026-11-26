@@ -44,12 +44,3 @@ msgstr "Utenti"
 #, python-format
 msgid "You cannot set groups and users at the same time."
 msgstr "Non si possono impostare gruppi e utenti allo stesso tempo."
-
-#~ msgid "Display Name"
-#~ msgstr "Nome visualizzato"
-
-#~ msgid "ID"
-#~ msgstr "ID"
-
-#~ msgid "Last Modified on"
-#~ msgstr "Ultima modifica il"
